@@ -1,0 +1,33 @@
+{
+  "name": "angular-learning",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "npm run build && npm start",
+    "build": "npm run tsc && browserify ./build/main.js -o ./public/app.js",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~2.4.0",
+    "@angular/compiler": "~2.4.0",
+    "@angular/core": "~2.4.0",
+    "@angular/forms": "~2.4.0",
+    "@angular/http": "~2.4.0",
+    "@angular/platform-browser": "~2.4.0",
+    "@angular/platform-browser-dynamic": "~2.4.0",
+    "@angular/router": "~3.4.0",
+    "express": "^4.14.0",
+    "reflect-metadata": "^0.1.9",
+    "rxjs": "5.0.1",
+    "zone": "^0.3.4",
+    "zone.js": "^0.7.4"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "typescript": "~2.0.10"
+  },
+  "repository": {}
+}
