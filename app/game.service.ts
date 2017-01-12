@@ -11,7 +11,7 @@ export class GameService {
     return this.http.post('/api/join', body).map((response: Response) => {
       console.log(response);
       return {
-        id: ''
+        id: 'abc'
       };
     });
   }

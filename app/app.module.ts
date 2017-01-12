@@ -6,6 +6,8 @@ import {AppComponent}  from './app.component';
 import {MessageComponent} from './message.component';
 import {LoginComponent} from './login.component';
 import {GameComponent} from './game.component';
+import {JoinGameComponent} from './join.component';
+import {TowerDefenseComponent} from './tower-defense.component';
 
 import {AuthGuard} from './auth.guard';
 import {AuthService} from './auth.service';
@@ -26,6 +28,8 @@ import {routing}       from './app.routing';
     MessageComponent,
     LoginComponent,
     GameComponent,
+    JoinGameComponent,
+    TowerDefenseComponent,
   ],
   providers:    [
     AuthGuard,
