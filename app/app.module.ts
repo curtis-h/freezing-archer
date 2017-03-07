@@ -15,6 +15,7 @@ import {GameService} from './game.service';
 import {MessageService} from './message.service';
 
 import {routing}       from './app.routing';
+import { WindowRef, DocumentRef } from './tower-defense.component';
 
 @NgModule({
   imports:      [
@@ -36,6 +37,8 @@ import {routing}       from './app.routing';
     AuthService,
     GameService,
     MessageService,
+    WindowRef,
+    DocumentRef
   ],
   bootstrap:    [AppComponent]
 })

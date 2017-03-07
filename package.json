@@ -27,7 +27,8 @@
   },
   "devDependencies": {
     "browserify": "^13.1.1",
-    "typescript": "~2.0.10"
+    "typescript": "~2.0.10",
+    "watchify": "^3.9.0"
   },
   "repository": {}
 }
