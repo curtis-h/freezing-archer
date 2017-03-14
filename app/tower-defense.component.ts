@@ -170,7 +170,7 @@ console.log('merker', marker.position.lat(), marker.position.lng());
       script.defer = true;
       script.src   = 'https://maps.googleapis.com/maps/api/js';
       script.src  += '?callback=' + cbName;
-      script.src  += '&key=AIzaSyAirjf_8j7Ay-dl2vymv0VACMqL70RaKMI';
+      script.src  += '&key=';
 
       this.callback = new Promise((resolve, reject) => {
         window[cbName] = () => resolve();
