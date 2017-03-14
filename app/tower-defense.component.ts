@@ -20,8 +20,6 @@ declare var google: any;
   template: `<div class="gmap" #gmap></div>`,
   styles: [`.gmap { height: 400px; width: 400px; }`]
 })
-// <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAirjf_8j7Ay-dl2vymv0VACMqL70RaKMI" async defer></script>
-// <img src="https://maps.googleapis.com/maps/api/staticmap?center=51.454273,-2.592994&zoom=13&size=400x400&key=AIzaSyAirjf_8j7Ay-dl2vymv0VACMqL70RaKMI" />
 
 export class TowerDefenseComponent implements OnInit {
   @ViewChild('gmap') mapElem: ElementRef;
@@ -76,15 +74,6 @@ export class TowerDefenseComponent implements OnInit {
         map: this.map,
         position: pos
       });
-
-      // let directions = 'https://maps.googleapis.com/maps/api/directions/json';
-      // directions += '?origin=' + pos.toUrlValue();
-      // directions += '&destination=' + this.center.toUrlValue();
-      // directions += '&key=AIzaSyAirjf_8j7Ay-dl2vymv0VACMqL70RaKMI';
-      //
-      // this.http.get(directions).subscribe(data => {
-      //   console.log('http: ', data);
-      // });
 
       this.directionsService.route({
          origin: pos,
